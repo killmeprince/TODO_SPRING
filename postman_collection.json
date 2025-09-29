@@ -1,0 +1,12 @@
+{
+  "info": { "name": "WebToDo API", "_postman_id": "e2c11111-aaaa-4b9e-9c9c-000000000123", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "item": [
+    { "name": "Create task", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "body": { "mode": "raw", "raw": "{\n  \"name\": \"Edit video\",\n  \"info\": \"Resolve lesson\",\n  \"dueAt\": \"2025-10-10T12:00:00\"\n}" }, "url": { "raw": "http://localhost:8080/api/tasks", "host": ["http://localhost:8080"], "path": ["api","tasks"] } } },
+    { "name": "Get by id", "request": { "method": "GET", "url": { "raw": "http://localhost:8080/api/tasks/1", "host": ["http://localhost:8080"], "path": ["api","tasks","1"] } } },
+    { "name": "List", "request": { "method": "GET", "url": { "raw": "http://localhost:8080/api/tasks", "host": ["http://localhost:8080"], "path": ["api","tasks"] } } },
+    { "name": "List (status=todo)", "request": { "method": "GET", "url": { "raw": "http://localhost:8080/api/tasks?status=todo", "host": ["http://localhost:8080"], "path": ["api","tasks"], "query": [{"key":"status","value":"todo"}] } } },
+    { "name": "List (sort=status desc)", "request": { "method": "GET", "url": { "raw": "http://localhost:8080/api/tasks?sortBy=status&sortDir=desc", "host": ["http://localhost:8080"], "path": ["api","tasks"], "query": [{"key":"sortBy","value":"status"},{"key":"sortDir","value":"desc"}] } } },
+    { "name": "Update task", "request": { "method": "PUT", "header": [{"key":"Content-Type","value":"application/json"}], "body": { "mode": "raw", "raw": "{\n  \"status\": \"IN_PROGRESS\",\n  \"info\": \"Color grading\"\n}" }, "url": { "raw": "http://localhost:8080/api/tasks/1", "host": ["http://localhost:8080"], "path": ["api","tasks","1"] } } },
+    { "name": "Delete task", "request": { "method": "DELETE", "url": { "raw": "http://localhost:8080/api/tasks/1", "host": ["http://localhost:8080"], "path": ["api","tasks","1"] } } }
+  ]
+}

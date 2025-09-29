@@ -1,0 +1,176 @@
+{
+	"id": "7ef34c0f-2f94-46b9-80b4-63d74e5d1cd6",
+	"name": "WebToDo API",
+	"timestamp": "2025-09-29T14:25:08.108Z",
+	"collection_id": "34919823-87632372-b162-431d-a8d5-dd1e6fb6ba4b",
+	"folder_id": 0,
+	"environment_id": "34919823-395c0634-3658-443c-b233-ced48e125ddc",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-09-29T14:25:06.318Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "5886ca22-3312-46b9-8836-90c69bf6cbdb",
+			"name": "Create task",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 254,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				254
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4fbeaa96-08fa-49d6-8421-c1ffa210cdf6",
+			"name": "Get by id",
+			"url": "http://localhost:8080/api/tasks/1",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				32
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2f77412c-d79c-4f3d-b046-202413926d93",
+			"name": "List",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 98,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				98
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4716c494-2d93-422f-84a5-3fb691e016ed",
+			"name": "List (status=todo)",
+			"url": "http://localhost:8080/api/tasks?status=todo",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d6687f7a-6821-4ecd-bd56-50f65ec1a315",
+			"name": "List (sort=status desc)",
+			"url": "http://localhost:8080/api/tasks?sortBy=status&sortDir=desc",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "68846e57-976f-4b9a-ba18-72b41802d5f1",
+			"name": "Update task",
+			"url": "http://localhost:8080/api/tasks/1",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				32
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "15a344a1-756d-4fcb-8ba7-9a69e4ebed05",
+			"name": "Delete task",
+			"url": "http://localhost:8080/api/tasks/1",
+			"time": 17,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				17
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 462,
+	"collection": {
+		"requests": [
+			{
+				"id": "5886ca22-3312-46b9-8836-90c69bf6cbdb",
+				"method": "POST"
+			},
+			{
+				"id": "4fbeaa96-08fa-49d6-8421-c1ffa210cdf6",
+				"method": "GET"
+			},
+			{
+				"id": "2f77412c-d79c-4f3d-b046-202413926d93",
+				"method": "GET"
+			},
+			{
+				"id": "4716c494-2d93-422f-84a5-3fb691e016ed",
+				"method": "GET"
+			},
+			{
+				"id": "d6687f7a-6821-4ecd-bd56-50f65ec1a315",
+				"method": "GET"
+			},
+			{
+				"id": "68846e57-976f-4b9a-ba18-72b41802d5f1",
+				"method": "PUT"
+			},
+			{
+				"id": "15a344a1-756d-4fcb-8ba7-9a69e4ebed05",
+				"method": "DELETE"
+			}
+		]
+	}
+}
